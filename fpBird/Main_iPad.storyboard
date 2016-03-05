@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Game Scene-->
+        <scene sceneID="9LE-5s-BDB">
+            <objects>
+                <viewController storyboardIdentifier="ipadView" id="SLd-lh-fIf" customClass="GameScene" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGR-6Z-dff"/>
+                        <viewControllerLayoutGuide type="bottom" id="jzD-OQ-zzq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fL4-Gw-8aC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AIr.png" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-y8-tF8">
+                                <rect key="frame" x="-16" y="-9" width="789" height="1041"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emergy.png" translatesAutoresizingMaskIntoConstraints="NO" id="04g-hp-kye">
+                                <rect key="frame" x="504" y="-808" width="143" height="1206"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzC-2Z-fty">
+                                <rect key="frame" x="-5" y="-24" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="easyMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="awa-rq-7Jt">
+                                <rect key="frame" x="243" y="468" width="88" height="87"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GPSButton001.png" translatesAutoresizingMaskIntoConstraints="NO" id="86c-km-ySE">
+                                <rect key="frame" x="521" y="457" width="121" height="121"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IO-Z0-4I7">
+                                <rect key="frame" x="72" y="490" width="107" height="56"/>
+                                <color key="backgroundColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAct:" destination="SLd-lh-fIf" eventType="touchUpInside" id="tjf-yh-jJ8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emergy.png" translatesAutoresizingMaskIntoConstraints="NO" id="isT-37-Kg7">
+                                <rect key="frame" x="514" y="755" width="134" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="bottomTunnel" destination="isT-37-Kg7" id="may-mT-Vfy"/>
+                        <outlet property="characotor" destination="awa-rq-7Jt" id="kPl-PN-cjn"/>
+                        <outlet property="enemy_Label" destination="86c-km-ySE" id="iFD-Ii-yv3"/>
+                        <outlet property="startButton" destination="2IO-Z0-4I7" id="xrX-6r-1ij"/>
+                        <outlet property="tunnelTop" destination="04g-hp-kye" id="hj2-Px-oFl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNS-EK-STe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AIr.png" width="2550" height="2597"/>
+        <image name="GPSButton001.png" width="276" height="276"/>
+        <image name="easyMap.png" width="168" height="289"/>
+        <image name="emergy.png" width="200" height="200"/>
+    </resources>
+</document>
